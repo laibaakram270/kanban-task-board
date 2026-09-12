@@ -139,6 +139,8 @@ npm install
 ```bash
 npm run dev
 ```
+## DEMO VIDEO
+https://drive.google.com/file/d/1K6EJJnxsmy5iYPgfDwWgt-KL4HNOTiAJ/view?usp=sharing
 ## Vite will provide a local development URL
 ```bash
 https://localhost:5173/
