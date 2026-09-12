@@ -147,4 +147,4 @@ https://localhost:5173/
 Open the URL in the web browser.
 
 ## DEMO VIDEO
-https://drive.google.com/file/d/1K6EJJnxsmy5iYPgfDwWgt-KL4HNOTiAJ/view?usp=sharing
+https://www.loom.com/share/b6db39083fbe4364bb60d39e700b48c9
