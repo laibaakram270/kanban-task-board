@@ -125,4 +125,23 @@ Make sure the following are installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone 
+git clone https://github.com/laibaakram270/kanban-task-board
+```
+## Step 2: Open the Project
+```bash
+cd kanban-task-board
+```
+## Step 3: Install Dependencies
+```bash
+npm install
+```
+## Step 4: Start the Development Server
+```bash
+npm run dev
+```
+## Vite will provide a local development URL
+```bash
+https://localhost:5173/
+```
+## Step 5:
+Open the URL in the web browser.
