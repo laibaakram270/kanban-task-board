@@ -1,16 +1,128 @@
-# React + Vite
+# Interactive Kanban Task Board
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+An interactive and responsive Kanban Task Board built with React and Vite. The application allows users to create, edit, delete, move, and reorder tasks across different workflow columns.
 
-Currently, two official plugins are available:
+The application also supports undo/redo functionality using the Command Pattern and automatically saves board data locally using IndexedDB, allowing tasks to persist after refreshing the page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### 1. Kanban Board
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Three workflow columns:
+  - To Do
+  - In Progress
+  - Done
+- Responsive layout for different screen sizes.
+- Clean and modern user interface using Tailwind CSS.
 
-## Expanding the Oxlint configuration
+### 2. Task Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Users can:
+
+- Create new tasks.
+- Edit existing task titles.
+- Delete tasks.
+- Move tasks between columns.
+- Reorder tasks within the same column.
+
+### 3. Native Drag and Drop
+
+The application uses the native HTML5 Drag and Drop API.
+
+Users can:
+
+- Drag tasks between columns.
+- Reorder tasks within a column.
+- See a visual drop indicator when moving a task.
+
+### 4. Undo and Redo
+
+The application implements the Command Pattern to provide state history.
+
+Supported commands include:
+
+- CreateTaskCommand
+- EditTaskCommand
+- MoveTaskCommand
+- ReorderTaskCommand
+
+Users can:
+
+- Undo previous actions.
+- Redo undone actions.
+- Maintain separate undo and redo histories.
+
+### 5. Offline Local Persistence
+
+Board data is stored locally using IndexedDB.
+
+This allows:
+
+- Tasks to remain after refreshing the browser.
+- Task edits to persist.
+- Task movements to persist.
+- Task ordering to persist.
+- The application to work without relying on a backend database.
+
+### 6. Accessibility
+
+The application includes accessibility features such as:
+
+- ARIA labels.
+- Accessible task and column descriptions.
+- Labels for form inputs.
+- Keyboard-focusable task cards.
+- Accessible buttons and controls.
+
+### 7. Responsive Design
+
+The interface is designed to work across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile-sized screens
+
+## Technology Stack
+
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+- HTML5 Drag and Drop API
+- IndexedDB
+- CSS
+- Git
+- GitHub
+
+## Dependencies
+
+### Main Dependencies
+
+- `react`
+- `react-dom`
+
+### Development Dependencies
+
+- `vite`
+- `tailwindcss`
+- `@tailwindcss/vite`
+- `@vitejs/plugin-react`
+- `eslint`
+
+The project uses browser-native IndexedDB, so no separate database server is required.
+
+## Installation
+
+### Prerequisites
+
+Make sure the following are installed:
+
+- Node.js
+- npm
+- Git
+
+### Step 1: Clone the Repository
+
+```bash
+git clone 
